@@ -1,0 +1,61 @@
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../../fonts/space-mono-v6-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../fonts/space-mono-v6-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../../fonts/lexend-deca-v7-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../fonts/lexend-deca-v7-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  font-size: 62.5% // 62.5% *16 = 10px
+}
+
+.hero-heading {
+  font-weight: bold;
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+  letter-spacing: -2.5px;
+  color: $color-white;
+  margin: 0;
+}
+
+.section-heading {
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -2.2px;
+  color: $color-dark-grey;
+  margin: 0;
+}
+
+.card-heading {
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  letter-spacing: -1.1px;
+  color: $color-dark-grey;
+  margin: 0;
+}
+
+.text {
+  font-family: Lexend Deca;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
