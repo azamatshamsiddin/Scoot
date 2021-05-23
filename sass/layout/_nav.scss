@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+
+  &__item {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-right: 3.2rem;
+    }
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    color: $color-dim-grey;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+}

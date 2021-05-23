@@ -1,0 +1,135 @@
+// background-image: url(../../images/bg-rectangle.svg), url(../../images/hero-circle.svg), url(../../images/hero-bg-img.png);
+// background-size: 19rem 1.5rem, 23.4rem 6rem, cover;
+// background-position: left top 58%, right -5rem bottom 15rem, center;
+.hero {
+  padding: 15.3rem 0;
+  background-image: url(../../images/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-inner {
+  max-width: 50rem;
+}
+
+.hero-info {
+  margin-top: 4rem;
+  max-width: 40.5rem;
+
+  &__text {
+    margin-bottom: 4rem;
+    color: $color-white;
+  }
+}
+
+//**************************
+//***SECTION CONVENIENCES***
+//**************************
+.conveniences {
+  margin-top: 16rem;
+  position: relative;
+}
+
+.conveniences-inner {
+  display: flex;
+
+  &::before {
+    @include baElements(105rem, 1.5rem);
+    background-color: $color-light-grey;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.convenience {
+  flex-basis: 35rem;
+
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  &__heading {
+    margin: 4rem 0 2.7rem;
+  }
+}
+
+//******************************************
+//***SECTION TELEMETRY, CITY, PAYMENT ******
+//******************************************
+.telemetry {
+  background-image: url(../../images/bg-light-circle.png);
+  background-size: 44.5rem 44.5rem;
+  background-repeat: no-repeat;
+  background-position: right -30rem center;
+  position: relative;
+
+  &::after {
+    @include baElements(74rem, 15rem);
+    background-image: url(../../images/rectangle-arrow.svg);
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.city {
+  background-image: url(../../images/bg-light-circle.png);
+  background-size: 44.5rem 44.5rem;
+  background-repeat: no-repeat;
+  background-position: left -30rem center;
+  position: relative;
+
+  &::after {
+    @include baElements(75rem, 15rem);
+    background-image: url(../../images/rectangle-arrow2.svg);
+    background-repeat: no-repeat;
+    top: 0;
+    left: -31rem;
+    position: absolute;
+  }
+
+  & .content {
+    flex-direction: row-reverse;
+  }
+}
+
+.payment {
+  background-image: url(../../images/bg-light-circle.png);
+  background-size: 44.5rem 44.5rem;
+  background-repeat: no-repeat;
+  background-position: right -30rem center;
+  margin-bottom: 20rem;
+  position: relative;
+
+  &::after {
+    @include baElements(74rem, 15rem);
+    background-image: url(../../images/rectangle-arrow.svg);
+    background-repeat: no-repeat;
+    top: 8rem;
+    right: -31rem;
+    position: absolute;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16rem 0;
+
+  &__img {
+    border-radius: 50%;
+  }
+}
+
+.content-info {
+  max-width: 44.5rem;
+
+  &__text {
+    margin: 2.4rem 0 4rem;
+  }
+}
