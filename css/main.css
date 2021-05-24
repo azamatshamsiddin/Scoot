@@ -498,6 +498,21 @@ html {
   align-items: center;
 }
 
+.social__link {
+  color: #fcb72b;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .3s ease;
+}
+
+.social__link:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.social__link:hover {
+  color: #e5ecf4;
+}
+
 .header {
   padding: 2.2rem 0;
 }

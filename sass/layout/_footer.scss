@@ -32,3 +32,16 @@
     align-items: center;
   }
 }
+
+.social__link{
+  color: $color-yellow;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .3s ease;
+  &:not(:last-child){
+    margin-right: 2.4rem;
+  }
+  &:hover{
+    color: $color-light-grey;
+  }
+}
