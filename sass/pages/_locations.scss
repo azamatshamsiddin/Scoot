@@ -1,0 +1,88 @@
+.locations-hero {
+  background-image: url(../../images/hero-circle.svg), url(../../images/locations-bg.png);
+  background-size: 23.4rem 6.2rem, cover;
+  background-repeat: no-repeat;
+  background-position: right -3rem center, center;
+  padding: 7.2rem 0;
+
+}
+
+.map {
+  position: relative;
+  margin-top: 120px;
+
+  &__img {
+    object-fit: contain;
+  }
+
+  &__link {
+    padding: 22px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: $color-yellow;
+    cursor: pointer;
+    max-width: 18.9rem;
+    width: 100%;
+    min-height: 7.2rem;
+    transition: all .3s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      border-top: 16px solid $color-yellow;
+      border-right: 16px solid transparent;
+      // border-bottom: 16px solid $color-yellow;
+      border-left: 16px solid transparent;
+      transform: translatex(-50%);
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+.newyork {
+  position: absolute;
+  top: 75px;
+  left: 145px;
+}
+
+.london {
+  position: absolute;
+  top: 20px;
+  left: 395px;
+}
+
+.yokohama {
+  position: absolute;
+  top: 80px;
+  right: 70px;
+}
+
+.jakarta {
+  position: absolute;
+  top: 250px;
+  right: 140px;
+}
+
+.locations-text {
+  border-bottom: 1px solid transparent;
+  margin: 12rem 0;
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__heading {
+    max-width: 35rem;
+  }
+
+  &__info {
+    max-width: 44.5rem;
+    margin-left: 3rem;
+  }
+}
