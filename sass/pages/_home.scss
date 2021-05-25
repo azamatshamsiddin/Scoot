@@ -60,37 +60,18 @@
 //***SECTION TELEMETRY, CITY, PAYMENT ******
 //******************************************
 .telemetry {
-  background-image: url(../../images/bg-light-circle.png);
-  background-size: 44.5rem 44.5rem;
+  background-image: url(../../images/rectangle-arrow.svg), url(../../images/bg-light-circle.png);
+  background-size: 74rem 15rem, 44.5rem 44.5rem;
   background-repeat: no-repeat;
-  background-position: right -30rem center;
-  position: relative;
-
-  &::after {
-    @include baElements(74rem, 15rem);
-    background-image: url(../../images/rectangle-arrow.svg);
-    background-repeat: no-repeat;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-  }
+  background-position: right bottom, right -30rem center;
 }
 
 .city {
-  background-image: url(../../images/bg-light-circle.png);
-  background-size: 44.5rem 44.5rem;
+  background-image: url(../../images/rectangle-arrow2.svg), url(../../images/bg-light-circle.png);
+  background-size: 75rem 15rem, 44.5rem 44.5rem;
   background-repeat: no-repeat;
-  background-position: left -30rem center;
-  position: relative;
-
-  &::after {
-    @include baElements(75rem, 15rem);
-    background-image: url(../../images/rectangle-arrow2.svg);
-    background-repeat: no-repeat;
-    top: 0;
-    left: -31rem;
-    position: absolute;
-  }
+  background-position: left -31rem top, left -30rem center;
+  z-index: 100;
 
   & .content {
     flex-direction: row-reverse;
@@ -98,21 +79,12 @@
 }
 
 .payment {
-  background-image: url(../../images/bg-light-circle.png);
-  background-size: 44.5rem 44.5rem;
+  background-image: url(../../images/rectangle-arrow.svg), url(../../images/bg-light-circle.png);
+  background-size: 74rem 15rem, 44.5rem 44.5rem;
   background-repeat: no-repeat;
-  background-position: right -30rem center;
+  background-position: right -31rem top 8rem, right -30rem center;
   margin-bottom: 20rem;
-  position: relative;
-
-  &::after {
-    @include baElements(74rem, 15rem);
-    background-image: url(../../images/rectangle-arrow.svg);
-    background-repeat: no-repeat;
-    top: 8rem;
-    right: -31rem;
-    position: absolute;
-  }
+  z-index: 100;
 }
 
 .content {
@@ -123,6 +95,7 @@
 
   &__img {
     border-radius: 50%;
+    z-index: -1;
   }
 }
 
