@@ -517,9 +517,10 @@ html {
     margin: 4rem 0 2.7rem; }
 
 .telemetry {
-  background-image: url(../../images/bg-light-circle.png);
-  background-size: 44.5rem 44.5rem;
+  background-image: url(../../images/rectangle-arrow.svg), url(../../images/bg-light-circle.png);
+  background-size: 74rem 15rem, 44.5rem 44.5rem;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   background-position: right -30rem center;
   position: relative; }
   .telemetry::after {
@@ -532,11 +533,16 @@ html {
     bottom: 0;
     right: 0;
     position: absolute; }
+=======
+  background-position: right bottom, right -30rem center;
+}
+>>>>>>> c6d495fee5395af2e52c49a9b9256537fa613cf3
 
 .city {
-  background-image: url(../../images/bg-light-circle.png);
-  background-size: 44.5rem 44.5rem;
+  background-image: url(../../images/rectangle-arrow2.svg), url(../../images/bg-light-circle.png);
+  background-size: 75rem 15rem, 44.5rem 44.5rem;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   background-position: left -30rem center;
   position: relative; }
   .city::after {
@@ -551,13 +557,23 @@ html {
     position: absolute; }
   .city .content {
     flex-direction: row-reverse; }
+=======
+  background-position: left -31rem top, left -30rem center;
+  z-index: 100;
+}
+
+.city .content {
+  flex-direction: row-reverse;
+}
+>>>>>>> c6d495fee5395af2e52c49a9b9256537fa613cf3
 
 .payment {
-  background-image: url(../../images/bg-light-circle.png);
-  background-size: 44.5rem 44.5rem;
+  background-image: url(../../images/rectangle-arrow.svg), url(../../images/bg-light-circle.png);
+  background-size: 74rem 15rem, 44.5rem 44.5rem;
   background-repeat: no-repeat;
-  background-position: right -30rem center;
+  background-position: right -31rem top 8rem, right -30rem center;
   margin-bottom: 20rem;
+<<<<<<< HEAD
   position: relative; }
   .payment::after {
     content: "";
@@ -569,11 +585,16 @@ html {
     top: 8rem;
     right: -31rem;
     position: absolute; }
+=======
+  z-index: 100;
+}
+>>>>>>> c6d495fee5395af2e52c49a9b9256537fa613cf3
 
 .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
   margin: 16rem 0; }
   .content__img {
     border-radius: 50%; }
@@ -582,3 +603,108 @@ html {
   max-width: 44.5rem; }
   .content-info__text {
     margin: 2.4rem 0 4rem; }
+=======
+  margin: 16rem 0;
+}
+
+.content__img {
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.content-info {
+  max-width: 44.5rem;
+}
+
+.content-info__text {
+  margin: 2.4rem 0 4rem;
+}
+
+.locations-hero {
+  background-image: url(../../images/hero-circle.svg), url(../../images/locations-bg.png);
+  background-size: 23.4rem 6.2rem, cover;
+  background-repeat: no-repeat;
+  background-position: right -3rem center, center;
+  padding: 7.2rem 0;
+}
+
+.map {
+  position: relative;
+  margin-top: 120px;
+}
+
+.map__img {
+  object-fit: contain;
+}
+
+.map__link {
+  padding: 22px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #fcb72b;
+  cursor: pointer;
+  max-width: 18.9rem;
+  width: 100%;
+  min-height: 7.2rem;
+  transition: all .3s ease;
+}
+
+.map__link::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  border-top: 16px solid #fcb72b;
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  transform: translatex(-50%);
+}
+
+.map__link:hover {
+  transform: translateY(-10px);
+}
+
+.newyork {
+  position: absolute;
+  top: 75px;
+  left: 145px;
+}
+
+.london {
+  position: absolute;
+  top: 20px;
+  left: 395px;
+}
+
+.yokohama {
+  position: absolute;
+  top: 80px;
+  right: 70px;
+}
+
+.jakarta {
+  position: absolute;
+  top: 250px;
+  right: 140px;
+}
+
+.locations-text {
+  border-bottom: 1px solid transparent;
+  margin: 12rem 0;
+}
+
+.locations-text .container {
+  display: flex;
+  align-items: center;
+}
+
+.locations-text__heading {
+  max-width: 35rem;
+}
+
+.locations-text__info {
+  max-width: 44.5rem;
+  margin-left: 3rem;
+}
+>>>>>>> c6d495fee5395af2e52c49a9b9256537fa613cf3
